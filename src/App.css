@@ -40,7 +40,8 @@ body {
   background-color: var(--Red);
   background-image: url(./assets/images/bg-intro-mobile.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   color: white;
   line-height: 1.6;
   letter-spacing: 0.02em;

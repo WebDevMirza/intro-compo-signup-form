@@ -63,10 +63,11 @@ p {
 .signupForm {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
 }
 
-.signupForm > * {
+.signupForm > *:not(p) {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   border: 1px solid var(--GrayishBlue);
@@ -74,6 +75,27 @@ p {
   color: var(--DarkBlue);
   font-weight: 500;
   font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+input::placeholder {
+  color: var(--GrayishBlue);
+  letter-spacing: 0.02em;
+}
+
+.signupForm > *:has(+ p) {
+  margin-bottom: 0;
+}
+
+.signupForm > p,
+.signupForm > .btn {
+  margin-bottom: 1.25rem;
+}
+
+.signupForm p {
+  margin-left: auto;
+  color: var(--Red);
+  font-style: italic;
 }
 
 .btn {
@@ -83,13 +105,47 @@ p {
   color: white;
   text-transform: uppercase;
   box-shadow: hsl(154, 129%, 38%) 0 6px 2px;
-  border: 0;
+  border: 0 !important;
+}
+
+.btn:hover {
+  background-color: hsl(154, 59%, 55%);
+  box-shadow: hsl(154, 129%, 48%) 0 6px 2px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+input:focus-visible {
+  border: 2px solid var(--Blue);
+  outline: 0;
+}
+
+.error {
+  border: 2px solid var(--Red) !important;
+  background: url(../assets/images/icon-error.svg) no-repeat center right 1rem;
+}
+
+.error::placeholder {
+  color: red;
+  visibility: hidden;
+}
+
+.error:nth-of-type(3)::placeholder {
+  visibility: visible;
+  font-weight: 600;
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 2.875rem;
   }
+
+  .trybox p {
+    max-width: fit-content;
+  }
+
   .container {
     max-width: 1440px;
     width: 90%;
