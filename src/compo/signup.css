@@ -1,0 +1,105 @@
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+p {
+  letter-spacing: 0.07em;
+}
+
+.f-bold {
+  font-weight: 700;
+}
+
+.trybox {
+  background-color: var(--Blue);
+  padding: 1.75rem 0;
+  border-radius: 0.75rem;
+}
+
+.trybox p {
+  max-width: 25ch;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 375px;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 5rem auto 2rem;
+}
+
+.wrapper > * + * {
+  margin-top: 2rem;
+}
+
+.signupCard {
+  background-color: white;
+  color: var(--GrayishBlue);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.trybox,
+.signupCard {
+  box-shadow: rgba(0, 0, 0, 0.123) 0 10px 2px;
+}
+
+.signupCard p {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.signupCard a {
+  color: var(--Red);
+  font-weight: 600;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signupForm > * {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--GrayishBlue);
+  border-radius: 0.25rem;
+  color: var(--DarkBlue);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.btn {
+  background-color: var(--Green);
+  font-size: 1.125rem;
+  letter-spacing: 0.08em;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: hsl(154, 129%, 38%) 0 6px 2px;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.875rem;
+  }
+  .container {
+    max-width: 1440px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .wrapper {
+    margin: 5rem 2.5rem;
+  }
+}

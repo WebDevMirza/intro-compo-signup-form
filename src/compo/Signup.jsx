@@ -1,11 +1,14 @@
 import Intro from "./Intro";
 import SForm from "./SForm";
+import "./signup.css";
 
 const Signup = () => {
   return (
     <>
-      <Intro />
-      <SForm />
+      <div className="container">
+        <Intro />
+        <SForm />
+      </div>
     </>
   );
 };

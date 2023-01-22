@@ -2,8 +2,6 @@
   /*  ===============================
       Colors
       ===============================   */
-  --bg-Violet: hsl(257, 40%, 49%);
-  --SoftMagenta: hsl(300, 69%, 71%);
 
   /* ### Primary */
 
@@ -39,11 +37,31 @@ body {
   font-family: var(--ff-Poppins);
   font-size: var(--fs-fontsize);
   font-weight: var(--fw-400);
+  background-color: var(--Red);
+  background-image: url(./assets/images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(./assets//images/bg-intro-desktop.png);
+  }
 }
 
 /* ==============================
 Layout
 ============================== */
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* ================================
    Typography
