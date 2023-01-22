@@ -144,6 +144,7 @@ input:focus-visible {
 
   .trybox p {
     max-width: fit-content;
+    padding: 0 2rem;
   }
 
   .container {

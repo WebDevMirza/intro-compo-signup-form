@@ -9,9 +9,13 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ## Screenshot
 
-![](./s2.png)
+### Desktop
 
-![](./s1.png)
+![](./lg.png)
+
+### Mobile
+
+![](./sm.png)
 
 ## Author
 
